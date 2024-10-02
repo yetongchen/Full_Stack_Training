@@ -43,10 +43,10 @@ WHERE Color IS NOT NULL
 -- NAME: Chainring Nut  --  COLOR: Silver
 -- NAME: Chainring  --  COLOR: Black
 
-SELECT 'NAME: ' + Name + ' -- COLOR: ' + Color AS Result
+SELECT Name, Color
 FROM Production.Product
 WHERE (Name LIKE '%Crankarm' OR Name LIKE 'Chainring%')
-ORDER BY Name DESC
+ORDER BY ProductID
 
 --8. Write a query to retrieve the columns ProductID and Name from the Production.Product table filtered by ProductID from 400 to 500
 
