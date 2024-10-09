@@ -1,0 +1,99 @@
+01 Introduction to C# and Data Types
+
+Understanding Data Types
+
+Test your Knowledge
+
+1. What type would you choose for the following ¡°numbers¡±?
+
+A person¡¯s telephone number: string
+A person¡¯s height: float
+A person¡¯s age: int
+A person¡¯s gender (Male, Female, Prefer Not To Answer): enum
+A person¡¯s salary: decimal
+A book¡¯s ISBN: string
+A book¡¯s price: decimal
+A book¡¯s shipping weight: float
+A country¡¯s population: int
+The number of stars in the universe: BigInteger
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business): int
+
+2. What are the difference between value type and reference type variables?
+What is boxing and unboxing?
+
+Value type will directly hold the value while reference type will hold the memory address or reference for the value. 
+Value type is stored in the stack memory but reference type is stored in the heap memory. 
+Value type will not be collected by garbage collector but reference type will be collected by garbage collector.
+The value type is created by struct or enum while reference type is created by class, interface, delegate or array.
+Value type can not accept null values whereas reference types can accept null values.   
+
+Boxing is the operation to convert value type to the reference type/ object type.
+Unboxing is the operation to convert reference type/object type to value type.
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+
+Managed resource:  managed by the .NET runtime (CLR), organized by garbage collector
+Unmanaged resource: not managed by the .NET runtime or the Garbage Collector, Dispose() method of IDisposable interface. 
+
+4. Whats the purpose of Garbage Collector in .NET?
+
+The garbage collector manages the allocation and release of memory for an application.
+Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak or attempting to access memory for an object that's already been freed.
+
+
+
+Controlling Flow and Converting Types
+
+Test your Knowledge
+
+1. What happens when you divide an int variable by 0?
+
+It will cause DivideByZeroException and the program will crash.
+
+2. What happens when you divide a double variable by 0?
+
+It will not throw an exception. It will return positive infinity if the numerator is positive.
+It will return negative infinity if the numerator is negative. It will return Nan if the numerator is 0.
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+
+If an int variable overflows, it wraps around and continues from the opposite extreme of the int range.
+For example, the max value of int is 2147483647, if we add 1 to this variable, it would return -2147483648.
+
+4. What is the difference between x = y++; and x = ++y;?
+
+x = y++; is post-increment. The value of y is first assigned to x, then y is incremented. So, x gets the value of y before it is incremented.
+x = ++y; is pre-increment. The value of y is incremented first, and then the incremented value is assigned to x. So, x gets the value after y is incremented.
+
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+
+break: Exits the loop entirely, stopping its execution and moving control to the statement immediately after the loop.
+continue: Skips the current iteration of the loop and moves to the next iteration.
+return: Exits the method in which the loop resides, stopping the loop and the method¡¯s execution.
+
+6. What are the three parts of a for statement and which of them are required?
+
+Initialization: e.g., int i = 0; Runs once at the start of the loop.
+Condition: e.g., i < 10; Evaluated before each iteration to determine if the loop should continue.
+Iteration: e.g., i++ Runs after each iteration of the loop.
+
+7. What is the difference between the = and == operators?
+
+= is assignment operator. It assigns the value on the right-hand side to the variable on the left-hand side.
+== is quality comparison operator. It checks if the values of two operands are equal and returns true if they are, otherwise false.
+
+8. Does the following statement compile? for ( ; true; ) ;
+
+Yes. It will run infinitely, and the body is empty statement.
+
+9. What does the underscore _ represent in a switch expression?
+
+The underscore _ represent the default case. It matches any value that hasn't been matched by previous cases.
+
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+
+The IEnumerable interface.
