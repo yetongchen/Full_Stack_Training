@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+    <link rel="stylesheet" href="css/HTML_homework.css">
+</head>
+<body>
+    <section>
+        <h1>Problem 1. Simple Table</h1>
+        <div class="logo-container">
+            <a href="https://antra.net/">
+                <img src="images/AntraLogo.png" alt="Antra Logo" class="logo">
+            </a>
+        </div>
+
+        <table class="simple-table">
+            <tr>
+                <td>
+                    <img src="images/if_Graph-Magnifier.png" alt="Business Advisory Services" class="service-image">
+                    <div class="service-title">Business Advisory Services</div>
+                    <div class="service-description">
+                        Our business advisory services assist our clients to align IT capabilities with their business needs to drive growth and productivity. Hence deriving a greater value from IT! We continually seek better ways of collaborating with our clients, work more cohesively to understand their business issues.
+                    </div>
+                </td>
+                <td>
+                    <img src="images/if_Studio.png" alt="Technology Services" class="service-image">
+                    <div class="service-title">Technology Services</div>
+                    <div class="service-description">
+                        Harness the power of emerging technologies while leveraging most out of the legacy IT. Antra offers full spectrum of technology services for business to achieve its business goals .Our differentiation starts with core fundamental elements required for your technology enablement.
+                    </div>
+                </td>
+                <td>
+                    <img src="images/if_law_iconsArtboard.png" alt="Professional Services" class="service-image">
+                    <div class="service-title">Professional Services</div>
+                    <div class="service-description">
+                        Our motto is to bridge skill gap, and foster on agile technologies to support growth of various organizations! Antra’s full range of workforce solutions and service delivery models equips our clients with the right people, skills and competencies required to get IT done.
+                    </div>
+                </td>
+            </tr>
+        </table>        
+    </section>
+
+    <section>
+        <h1>Problem 2. Exam Results</h1>
+        <table class="exam-results-table double-border">
+            <thead>
+                <tr>
+                    <th colspan="100%" class="exam-results-table-title">Web fundamentals exam results</th>
+                </tr>
+                <tr>
+                    <th>Nº</td>
+                    <th>First Name</th>
+                    <th>Last name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Gosho</td>
+                    <td>Goshev</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Tosho</td>
+                    <td>Toshev</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Pesho</td>
+                    <td>Pesho</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Gencho</td>
+                    <td>Genchev</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Draga</td>
+                    <td>Draganova</td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="100%">
+                        Average score from 05 participants: 500
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h1>Problem 3. Nested Tables</h1>
+        <table class="nested-table double-border">
+            <tr>
+                <td>
+                    <a href="https://antra.net/">
+                        <img src="images/AntraLogo.png" alt="Antra Logo" class="logo">
+                    </a>
+                </td>
+                <td>
+                    <table class="nested-table double-border">
+                        <tr>
+                            <td>Software</td>
+                        </tr>
+                        <tr>
+                            <td>Developer</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h1>Problem 4. Life in Antra</h1>
+        <div class="grid-container">
+            <div class="antra-life">Antra LIFE</div>
+            <div class="box google">Google</div>
+            <div class="box github">GitHub</div>
+            <div class="box fb">FB</div>
+            <div class="box gmail">GMail</div>
+            <div class="box youtube">YouTube</div>
+            <div class="box n2048">2048</div>
+            <div class="box food">Food</div>
+            <div class="box game">Game</div>
+            <div class="box">
+                <div class="box nested">
+                    <div class="small-box">Social Life</div>
+                    <div class="small-box">Sleep</div>                      
+                </div>
+              
+            </div>
+            <div class="box beer">Beer ></div>
+            <div class="box wc">WC</div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Problem 5. "Life in Antra" Keyboard</h1>
+        <table class="antra-life-table double-border">
+            <tr>
+                <th colspan="4">Antra Life</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="openNewTab('https://www.google.com/')">GOOGLE</button>
+                </td>
+                <td colspan="2">
+                    <button onclick="openNewTab('https://www.github.com/')">GitHub</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="openNewTab('https://www.facebook.com/')">Facebook</button>
+                </td>
+                <td>
+                    <button onclick="openNewTab('https://www.google.com/gmail/about')">GMail</button>
+                </td>
+                <td>
+                    <button onclick="openNewTab('https://www.youtube.com/')">YouTube</button>
+                </td>
+                <td>
+                    <button onclick="openNewTab('https://play2048.co/')">2048</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="openNewTab('https://www.food.com/')">Food</button>
+                </td>
+                <td colspan="2">
+                    <button onclick="openNewTab('https://store.steampowered.com/')">Game</button>
+                </td>
+                <td id="nested-td">
+                    <button onclick="openNewTab('https://www.instagram.com/')">Social life</button>
+                    <button onclick="openNewTab('https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep')">Sleep</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="openNewTab('https://en.wikipedia.org/wiki/Beer')" id="bear-btn">Beer>>></button>
+                </td>
+                <td>
+                    <button onclick="openNewTab('https://en.wikipedia.org/wiki/WC')">WC</buttton>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+<script>
+    function openNewTab(url) {
+        window.open(url, '_blank');
+    }
+    </script>
+</html>
