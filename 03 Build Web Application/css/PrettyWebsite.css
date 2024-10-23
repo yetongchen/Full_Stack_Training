@@ -1,0 +1,191 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    position: relative;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav {
+    background-color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    background: linear-gradient(to bottom, #ebeaea, #d3cece);
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #535252;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #ccc;
+
+}
+nav ul li:hover a {
+    color: white;
+}
+
+/* Main content container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    flex: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h1 {
+    color: yellowgreen;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: yellowgreen;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.products {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.product-item img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.product-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar styling */
+aside {
+    flex: 25%;
+    padding: 20px;
+}
+
+.news {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.messages {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.news h2, .messages h2 {
+    color: yellowgreen;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.news p, .messages p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news a, .messages a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.news a:hover, .messages a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: yellowgreen;
+    padding: 10px 0;
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+}
